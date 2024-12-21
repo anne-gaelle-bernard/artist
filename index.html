@@ -1,0 +1,2846 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Celebrity challenge</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Thasadith:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  <style>
+  /*home.css*/
+  /* Ask God for forgiveness, and leave your regrets in the past */
+:root {
+    --secondary-text: #ff0000;
+    --title-font: "Tiro Devanagari Marathi";
+    --main-bg: #3c0000;
+    --main-font: #ffffff;
+    --third-font: "Source Serif 4", serif;
+    --exclusive:#106942;
+    --white_bg: #ffffff;
+    --secondary_bg: rgba(249, 0, 0, 0.33);
+    --main_content_font: "Thasadith", sans-serif;
+  }
+  hr{
+    color: var(--main-font);
+  }
+  /*burger icon from nav*/
+  .material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+    color: var(--main-font);
+  }
+  .navbar {
+    font-family: var(--third-font);
+    font-size: 16px;
+    background-color: #000000;
+
+  }
+  
+  
+  body {
+    background-color: var(--main-bg);
+  }
+  
+  .quote {
+    grid-column: 2 / 4;
+    grid-row: 4; /* Adjusted to start from the 4th row and end at the 6th row */
+    font-family: var(--title-font);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    color: var(--secondary-text);
+  }
+  
+  .container {
+    max-width: 1320px;
+    padding: 10px;
+    overflow: hidden; /* Hides any overflow */
+    text-overflow: ellipsis;
+    font-size: 6px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 30px 170px 200px 60px 290px 350px auto;
+    grid-template-rows: 80px 130px 80px 130px 100px 60px 180px 100px;
+  }
+  .content1 {
+    /* Robyn Rihanna Fenty is a Barbadian singer */
+    grid-column: 2 / 4;
+    grid-row: 5;
+    font-family: var(--title-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+  }
+  .content2 {
+    /* Learn More */
+    grid-column: 2 /4;
+    grid-row: 6;
+    font-family: var(--title-font);
+    font-weight: 400;
+    font-size: 14px;
+  }
+  /*learn More*/
+  button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+  
+   }
+   
+   button.learn-more {
+    width: 12rem;
+    height: auto;
+   }
+   
+   button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background:var(--exclusive) ;
+    border-radius: 1.625rem;
+   }
+   
+   button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+   
+   button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+   button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+   }
+   
+   button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: var(--main-font);
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+   }
+   
+   button:hover .circle {
+    width: 100%;
+   }
+   
+   button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+   }
+   .button-text{
+    font-size: 12px;
+    font-family: var(--third-font);
+   }
+  .quote1 {
+    /* “ */
+    grid-column: 1;
+    grid-row: 3;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100, "YTLC" 500;
+    font-size: 128px;
+    line-height: 186px;
+    color: #ffffff;
+  }
+  .total_sale {
+    /* 250M+ */
+    grid-column: 2 /4;
+    grid-row: 7;
+    font-family: "Unna";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 55px;
+    color: #ffffff;
+  }
+  /* records sold worldwide */
+  .record {
+    grid-column: 2 /4;
+    grid-row: 8;
+    font-family: var(--title-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+    transform: translateY(-130%);
+  }
+  /* 10M+ */
+  .tenM {
+    grid-column: 3/ 4;
+    grid-row: 7;
+  }
+  
+  .albums {
+    /* albums sold in US */
+    grid-column: 3/ 4;
+    grid-row: 8;
+  }
+  
+  .bg_R {
+    /* R */
+  
+    grid-column: 4 / 5;
+    grid-row: 1;
+    transform: translateY(-400%) translateX(-100%);
+    font-weight: 400;
+    font-size: 1000px;
+    font-family: var(--third-font);
+    font-optical-sizing: auto;
+    font-style: normal;
+    z-index: 0;
+    color: #ffffff;
+  }
+  /* ihana */
+  .mask_text {
+    grid-column: 5;
+    grid-row: 7/8;
+    transform: translateY(-21.5%) translateX(30%);
+    font-family: var(--third-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 200px;
+    z-index: 4;
+    color: rgba(255, 0, 0, 0.91);
+  }
+  
+  .home_img {
+    /* Image from Home*/
+    grid-column: 4/6;
+    grid-row: 2;
+    width: auto;
+    height: 787px;
+    z-index: 1;
+    transform: translateY(-12%) translateX(-4%);
+  }
+  .highlight_rect {
+    /* Rectangle 4 */
+    grid-column: 6;
+    grid-row: 4;
+    transform: translateY(-20%) translateX(-20%);
+    width: 720px;
+    height: 150px;
+    z-index: 2;
+    background: rgba(249, 0, 0, 0.33);
+  }
+  .sign {
+    /* 225px-Rihanna-signature 1 */
+    width: 226px;
+    height: 96px;
+    grid-column: 7;
+    transform: translateY(-5%) translateX(-10%);
+    grid-row: 4;
+    z-index: 3;
+  }
+  
+  .home_footer {
+    /* Rectangle 3 */
+    grid-column: 1/8;
+    grid-row: 8;
+    background: #000000;
+    z-index: 3;
+  }
+  .icon {
+    color: #ffffff;
+    grid-column: 2;
+    grid-row: 8;
+    z-index: 4;
+    font-size: 20px;
+    transform: translateY(35%);
+  }
+  .bi {
+    margin-right: 10px;
+  }
+  .icon:hover{
+    color:#ff0000;
+  }
+  
+  /*9*/
+  .total_grammy {
+    transform: translateY(10%);
+    grid-column: 6;
+    grid-row: 8;
+    z-index: 4;
+    font-family: "Unna";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    color: #ffffff;
+  }
+  
+  /*13*/
+  .total_us_music {
+    transform: translateY(10%) translateX(55%);
+    grid-column: 6;
+    grid-row: 8;
+    z-index: 4;
+    font-family: "Unna";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    color: #ffffff;
+  }
+  
+  /*13*/
+  .total_billboard {
+    transform: translateY(10%) translateX(100%);
+    grid-column: 6;
+    grid-row: 8;
+    z-index: 4;
+    font-family: "Unna";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    color: #ffffff;
+  }
+  
+  .billboard {
+    transform: translateY(60%) translateX(61%);
+    grid-column: 6/8;
+    grid-row: 8/8;
+    z-index: 4;
+    font-family: "Tiro Devanagari Marathi";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+  }
+  
+  .grammy {
+    transform: translateY(60%);
+    grid-column: 6/8;
+    grid-row: 8/8;
+    z-index: 4;
+    font-family: "Tiro Devanagari Marathi";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+  }
+  
+  .us_music {
+    transform: translateY(60%) translateX(34%);
+    grid-column: 6/8;
+    grid-row: 8/8;
+    z-index: 4;
+    font-family: "Tiro Devanagari Marathi";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+  }
+  /*Responsive to mobile*/
+  @media (max-width: 576px) {
+    .container {
+      max-width: 576px;
+      padding: 5px;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: 10px 60px 60px 60px 40px 80px 55px;
+      grid-template-rows: 10px 30px 20px 30px 20px 10px 60px 30px;
+    }
+    .quote {
+      grid-column: 2 / 4;
+      grid-row: 4;
+      font-size: 10px;
+      line-height: 15px;
+    }
+    .content1 {
+      /* Robyn Rihanna Fenty is a Barbadian singer */
+      grid-column: 2 / 4;
+      grid-row: 5;
+      font-size: 5px;
+      line-height: 7px;
+    }
+    .content2 {
+      /* Learn More */
+      font-size: 5px;
+      line-height: 22px;
+    }
+    .quote1 {
+      /* “ */
+      transform: translateY(-130%);
+      grid-column: 1;
+      grid-row: 2;
+      font-size: 20px;
+    }
+    .total_sale {
+      /* 250M+ */
+      grid-column: 2;
+      grid-row: 7;
+      font-weight: 400;
+      font-size: 12px;
+    }
+  
+    /* records sold worldwide */
+    .record {
+      grid-column: 2;
+      grid-row: 8;
+      font-size: 3px;
+      transform: translateY(-100%);
+    }
+    /* 10M+ */
+    .tenM {
+      grid-column: 3/ 4;
+      grid-row: 7;
+    }
+  
+    .albums {
+      /* albums sold in US */
+      grid-column: 3/ 4;
+      grid-row: 8;
+      transform: translateY(-100%);
+    }
+  
+    .bg_R {
+      /* R */
+      grid-column: 4;
+      grid-row: 1;
+      transform: translateY(-400%) translateX(0%);
+      font-weight: 400;
+      font-size: 200px;
+    }
+    /* ihana */
+    .mask_text {
+      transform: translateY(-10.5%) translateX(-3%);
+      font-size: 60px;
+      z-index: 4;
+    }
+  
+    .home_img {
+      /* Image from Home*/
+      width: auto;
+      height: 187px;
+      transform: translateY(0%) translateX(-3.2%);
+    }
+    .highlight_rect {
+      /* Rectangle 4 */
+      grid-column: 5/8;
+      grid-row: 4;
+      transform: translateY(60%) translateX(0%);
+      width: 170px;
+      height: 30px;
+    }
+    .sign {
+      /* 225px-Rihanna-signature 1 */
+      grid-column: 6;
+      grid-row: 4;
+      width: 46px;
+      height: 20px;
+      transform: translateY(110%) translateX(150%);
+    }
+  
+    .home_footer {
+      /* Rectangle 3 */
+      grid-column: 1/8;
+      grid-row: 8;
+    }
+    .icon {
+      grid-column: 2;
+      grid-row: 8;
+      font-size: 7px;
+      transform: translateY(35%);
+    }
+    .bi {
+      margin-right: 2px;
+    }
+  
+    /*9*/
+    .total_grammy {
+      transform: translateY(15%) translateX(0%);
+      grid-column: 6;
+      grid-row: 8;
+      font-size: 12px;
+    }
+  
+    /*13*/
+    .total_us_music {
+      transform: translateY(15%) translateX(58%);
+      grid-column: 6;
+      grid-row: 8;
+      font-size: 12px;
+    }
+  
+    /*13*/
+    .total_billboard {
+      transform: translateY(15%) translateX(110%);
+      grid-column: 6;
+      grid-row: 8;
+      font-size: 12px;
+    }
+  
+    .billboard {
+      transform: translateY(40%) translateX(66%);
+      grid-column: 6/8;
+      grid-row: 8/8;
+      z-index: 4;
+      font-size: 3px;
+      color: #ffffff;
+    }
+  
+    .grammy {
+      transform: translateY(40%);
+      grid-column: 6/8;
+      grid-row: 8/8;
+      font-size: 3px;
+    }
+  
+    .us_music {
+      transform: translateY(40%) translateX(35%);
+      grid-column: 6/8;
+      grid-row: 8/8;
+      font-size: 3px;
+    }
+
+    .content2 {
+      /* Learn More */
+      font-size: 14px;
+    }
+    /*learn More*/
+     
+     button.learn-more {
+      width: 3rem;
+      height: auto;
+      transform: translateY(50%);
+     }
+     
+     button.learn-more .circle {
+      width: 1rem;
+      height: 1rem;
+      border-radius: 1.625rem;
+  
+     }
+  
+
+  }
+  
+  @media (min-width: 577px) and (max-width: 991px) {
+    .container {
+      max-width: 768px;
+      padding: 8px;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: 15px 130px 130px 30px 140px 170px auto;
+      grid-template-rows: 40px 40px 40px 70px 65px 35px 90px 50px;
+    }
+    .quote {
+      grid-column: 2 / 4;
+      grid-row: 4;
+      font-size: 24px;
+      line-height: 20px;
+    }
+    .content1 {
+      /* Robyn Rihanna Fenty is a Barbadian singer */
+      grid-column: 2 / 4;
+      grid-row: 5;
+      font-size: 12px;
+      line-height: 15px;
+    }
+    .content2 {
+      /* Learn More */
+      grid-column: 2 /4;
+      grid-row: 6;
+      font-size: 12px;
+      line-height: 11px;
+    }
+    .quote1 {
+      /* “ */
+      grid-column: 1;
+      grid-row: 3;
+      font-size: 64px;
+      transform: translateY(-120%);
+    }
+    .total_sale {
+      /* 250M+ */
+      grid-column: 2 /4;
+      grid-row: 7;
+      font-size: 20px;
+    }
+    /* records sold worldwide */
+    .record {
+      grid-column: 2 /4;
+      grid-row: 8;
+      font-size: 10px;
+      line-height: 11px;
+      transform: translateY(-100%);
+    }
+    /* 10M+ */
+    .tenM {
+      grid-column: 3/ 4;
+      grid-row: 7;
+    }
+  
+    .albums {
+      /* albums sold in US */
+      grid-column: 3/ 4;
+      grid-row: 8;
+    }
+  
+    .bg_R {
+      /* R */
+  
+      grid-column: 4 / 5;
+      grid-row: 1;
+      transform: translateY(-400%) translateX(-100%);
+      font-size: 500px;
+    }
+    /* ihana */
+    .mask_text {
+      grid-column: 5;
+      grid-row: 7/8;
+      transform: translateY(-22.5%) translateX(30%);
+      font-size: 100px;
+    }
+  
+    .home_img {
+      /* Image from Home*/
+      grid-column: 4/6;
+      grid-row: 2;
+      height: 387px;
+      transform: translateY(-12%) translateX(-3.2%);
+    }
+    .highlight_rect {
+      /* Rectangle 4 */
+      grid-column: 6;
+      grid-row: 4;
+      transform: translateY(-20%) translateX(-20%);
+      width: 385px;
+      height: 75px;
+    }
+    .sign {
+      /* 225px-Rihanna-signature 1 */
+      width: 126px;
+      height: 46px;
+      grid-column: 7;
+      transform: translateY(-5%);
+      grid-row: 4;
+    }
+  
+    .home_footer {
+      /* Rectangle 3 */
+      grid-column: 1/8;
+      grid-row: 8;
+      background: #000000;
+    }
+    .icon {
+      grid-column: 2;
+      grid-row: 8;
+      transform: translateY(35%);
+      font-size: 12px;
+    }
+    .bi {
+      margin-right: 5px;
+    }
+  
+    /*9*/
+    .total_grammy {
+      transform: translateY(10%) translateX(5%);
+      grid-column: 6;
+      grid-row: 8;
+      font-size: 22px;
+    }
+  
+    /*13*/
+    .total_us_music {
+      transform: translateY(10%) translateX(73%);
+      grid-column: 6;
+      grid-row: 8;
+      font-size: 22px;
+    }
+  
+    /*13*/
+    .total_billboard {
+      transform: translateY(10%) translateX(130%);
+      grid-column: 6;
+      grid-row: 8;
+      font-size: 22px;
+    }
+  
+    .billboard {
+      transform: translateY(60%) translateX(73%);
+      grid-column: 6/8;
+      grid-row: 8/8;
+      z-index: 4;
+      font-size: 8px;
+      line-height: 11px;
+    }
+  
+    .grammy {
+      transform: translateY(60%) translateX(3%);
+      grid-column: 6/8;
+      grid-row: 8/8;
+      font-size: 8px;
+      line-height: 11px;
+    }
+  
+    .us_music {
+      transform: translateY(60%) translateX(41%);
+      grid-column: 6/8;
+      grid-row: 8/8;
+      font-size: 8px;
+      line-height: 11px;
+    }
+  }
+  
+  
+  /*ceo.css*/
+  :root {
+    --secondary-text: #ff0000;
+    --title-font: "Tiro Devanagari Marathi";
+    --main-bg: #3c0000;
+    --main-font: #ffffff;
+    --third-font: "Source Serif 4", serif;
+    --white_bg: #ffffff;
+    --secondary_bg: rgba(249, 0, 0, 0.33);
+    --main_content_font: "Thasadith", sans-serif;
+  }
+  .grid-container3 {
+    display: grid;
+    grid-template-columns:105px 320px 320px 320px 105px ;
+    grid-column-gap: 30px;
+    grid-row-gap: 10px;
+    grid-template-rows: auto auto auto 300px; 
+    max-height: 3000px;
+    overflow: hidden;
+  }
+  .card-1{
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+.CEO_main_title{
+    /* She is the CEO */
+    grid-column: 1/span 5;
+    grid-row: 1;
+font-family: var(--title-font);
+font-style: italic;
+font-weight: 400;
+font-size: 96px;
+line-height: 128px;
+color: var(--main-font);
+}
+.image{
+    border-radius:30px ;
+}
+.card{
+border-radius: 30px;
+background: rgba(0, 0, 0, 0.6);
+border-radius: 30px;
+font-family: 'Tiro Devanagari Marathi';
+font-style: normal;
+font-weight: 400;
+
+}
+.card-title{
+    /* Savage X Fenty */
+font-size: 40px;
+line-height: 53px;
+color: rgba(255, 0, 0, 0.94);
+
+}
+.card-text{
+    /* Rihanna co-owns Savage X Fenty, */
+font-size: 16px;
+line-height: 21px;
+color: var(--main-font);
+
+}
+.card-2{
+    grid-row: 2;
+    grid-column: 3;
+    transform: translateY(20%);
+}
+
+/*to change card2 image size*/
+.img2{
+    /* fentybeauty_lvmh_brandpage_zone3_1-1992x1296-1 1 */
+width: 320px;
+height: 165.96px;
+transform: rotate(0.22deg);
+
+}
+
+.card-3{
+    grid-row: 2;
+    grid-column: 4;
+}
+
+/*to change card3 image size*/
+.img3{
+/* fenty-skin_feature-launch 1 */
+width: 320px;
+height: 172px;
+
+}
+
+.bg-left{
+/* R */
+grid-column: 1;
+grid-row: 2/span 3;
+z-index: 0;
+width: 613px;
+height: 286px;
+font-family: var(--third-font);
+font-style: normal;
+font-weight: 400;
+font-size: 1300px;
+transform: translateY(-200%) translateX(-60%);
+color: rgba(249, 0, 0, 0.57);
+}
+.bg-right{
+    /* R */
+
+grid-column: 5;
+grid-row: 2/span 3;
+width: 613px;
+height: 286px;
+font-family: var(--third-font);
+font-style: normal;
+font-weight: 400;
+font-size: 1300px;
+transform: translateY(-250%) translateX(-60%);
+color: rgba(249, 0, 0, 0.57);
+
+}
+.quote_ceo{
+    grid-column: 1;
+grid-row:  4;
+/* Don’t lower your standards for anything or anyone. */
+width: 309px;
+height: 63px;
+
+font-family: var(--title-font);
+font-style: italic;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+color:var(--main-font);
+z-index: 1;
+transform: translateY(100%);
+}
+
+/* Define media queries for different screen sizes */
+@media (max-width: 576px) {
+    .grid-container3 {
+      grid-template-columns:10px 100px 100px 100px 50px;
+      grid-template-rows: auto;
+    }
+    .card-1{
+        grid-column: 2;
+        grid-row: 2;
+        width:100%;
+      }
+    
+    .CEO_main_title{
+        /* She is the CEO */
+    font-size: 32px;
+    line-height: 128px;
+  
+    }
+    .image{
+        border-radius:30px ;
+        width: 320px;
+        height: 165.96px;
+    }
+    .card{
+    border-radius: 30px;
+    width: 18rem;
+    
+    }
+    .card-title{
+        /* Savage X Fenty */
+    font-size: 36px;
+    line-height: 50px;
+    }
+    .card-text{
+        /* Rihanna co-owns Savage X Fenty, */
+    font-size: 14px;
+    line-height: 18px;
+ 
+    
+    }
+    .card-2{
+        grid-row: 3;
+        grid-column: 2;
+        transform: translateY(0%);
+    }
+    
+    /*to change card2 image size*/
+    .img2{
+        /* fentybeauty_lvmh_brandpage_zone3_1-1992x1296-1 1 */
+    width: 320px;
+    height: 165.96px;
+    transform: rotate(0.22deg);
+    
+    }
+    
+    .card-3{
+        grid-row: 4;
+        grid-column: 2;
+    }
+    
+    /*to change card3 image size*/
+    .img3{
+    /* fenty-skin_feature-launch 1 */
+    width: 320px;
+    height: 172px;
+    
+    }
+    
+    .bg-left{
+    /* R */
+    grid-column: 1;
+    grid-row: 2/span 3;
+    font-size: 1300px;
+    transform: translateY(-200%) translateX(-60%);
+    
+    
+    }
+    .bg-right{
+        /* R */
+    
+    grid-column: 5;
+    grid-row: 3/span 4;
+    font-size: 1300px;
+    z-index:-1;
+    transform: translateY(-30%) translateX(-60%);
+    
+    }
+    .quote_ceo{
+    grid-column: 4;
+    grid-row:  4;
+    /* Don’t lower your standards for anything or anyone. */
+    width: 109px;
+    height: 63px;
+    font-size: 12px;
+    line-height: 15px;
+    z-index: 1;
+    text-align: right;
+    justify-self: self-end;
+    transform: translateY(770%);
+    }
+  }
+
+  @media (min-width: 577px) and (max-width: 991px) {
+
+    .grid-container3 {
+        grid-template-columns:55px 320px 320px 320px 105px;
+        grid-template-rows: auto;
+      }
+    .card-3{
+        grid-row: 5;
+        grid-column: 2;
+    }
+
+    .bg-right{
+        /* R */  
+    grid-column: 3;
+    grid-row: 3/span 5;
+    transform: translateY(-250%) translateX(-10%);
+   
+    
+    }
+    .quote_ceo{
+        grid-column:3;
+        grid-row:  5;
+        /* Don’t lower your standards for anything or anyone. */
+        width: 209px;
+        height: 80px;
+        font-size: 12px;
+        line-height: 15px;
+        z-index: 1;
+        text-align: right;
+        justify-self: self-end;
+        transform: translateY(630%);
+        }
+
+  }
+
+  /*ngo.css*/
+
+  .grid-container4 {
+    display: grid;
+    grid-template-columns:400px 100px 300px auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 10px;
+    grid-template-rows: 200px 500px 70px 180px;
+  }
+  .ngo_main_title{
+    /*She is the activism*/
+    grid-column: 1/span 3;
+    grid-row: 1;
+    font-family: var(--title-font);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 100px;
+    color: var(--main-font);
+    z-index: 1;
+  }
+  .ngo_cnt{
+    /* I feel strongly that all children */
+grid-column: 1;
+grid-row: 2;
+width: 400px;
+height: 501px;
+padding: 20px;
+font-family:var(--main_content_font);
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 31px;
+color: var(--main-font);
+transform: translateY(20%);
+  }
+
+.ngo_img{
+    /* rihanna-british-vogue-3-ht-rc-230215_1676486622213_hpEmbed_22x15_992 2 */
+
+grid-column: 3;
+grid-row: 2;
+width:1250px;
+height: auto;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 30px 0px 0px 30px;
+z-index: -3;
+transform: translateX(-15%);
+}
+.ngo_cnt_bg{
+    /* Rectangle 19 */
+grid-column: 1;
+grid-row: 2;
+z-index: -1;
+width: 400px;
+height: 600px;
+background: rgba(0, 0, 0, 0.6);
+border-radius: 0px 30px 30px 0px;
+transform: translateY(10%);
+
+}
+.ngo_mask_r{
+  /* R */
+grid-column: 2;
+width: 613px;
+height: 286px;
+font-family: var(--third-font);
+font-style: normal;
+font-weight: 400;
+font-size: 1200px;
+color: rgba(255, 0, 0, 0.69);
+transform: translateX(-40%) translateY(-180%);
+z-index: -2;
+
+}
+.ngo_bg_r{
+  /* R */
+
+grid-column: 4;
+grid-row: 2;
+width: 613px;
+height: 286px;
+font-family: var(--third-font);
+font-style: normal;
+font-weight: 400;
+font-size: 1200px;
+color: rgba(249, 0, 0, 0.57);
+z-index:-4;
+transform:translateX(-10%) translateY(-250%);
+
+}
+.ngo_quote{
+grid-column: 4;
+grid-row: 3;
+z-index: 2;
+/* God just has a way of working things out the way he wants to and you have no say in that. */
+width: 381px;
+height: 63px;
+font-family: var(--third-font);
+font-style: italic;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+padding: 30px;
+
+}
+.ngo_quote_bg{
+  grid-column: 4;
+  grid-row: 3;
+  z-index: 1;
+  /* God just has a way of working things out the way he wants to and you have no say in that. */
+  width: 500px;
+  height: 150px;
+  background-color: rgba(249, 0, 0, 0.21);
+}
+@media (max-width: 576px) {
+  .grid-container4 {
+    display: grid;
+    grid-template-columns:130px 30px 100px auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 10px;
+    grid-template-rows: 66px 160px 25px 60px;
+  }
+  .ngo_main_title{
+    /*She is the activism*/
+    font-size: 21px;
+    line-height: 30px;
+
+  }
+  .ngo_cnt{
+    /* I feel strongly that all children */
+width: 160px;
+height: 130px;
+padding: 20px;
+font-size: 8px;
+line-height: 11px;
+transform: translateY(20%);
+  }
+
+.ngo_img{
+    /* rihanna-british-vogue-3-ht-rc-230215_1676486622213_hpEmbed_22x15_992 2 */
+
+
+width:450px;
+border-radius: 15px 0px 0px 15px;
+transform: translateX(-40%);
+}
+.ngo_cnt_bg{
+    /* Rectangle 19 */
+
+width: 160px;
+height: 220px;
+border-radius: 0px 15px 15px 0;
+transform: translateY(10%);
+
+}
+.ngo_mask_r{
+  /* R */
+width: 213px;
+height: 96px;
+font-size: 400px;
+transform: translateX(-70%) translateY(-180%);
+
+}
+.ngo_bg_r{
+  /* R */
+
+  width: 213px;
+  height: 96px;
+font-size: 400px;
+transform:translateX(-40%) translateY(-250%);
+
+}
+.ngo_quote{
+
+/* God just has a way of working things out the way he wants to and you have no say in that. */
+width: 180px;
+height: 30px;
+font-size: 8px;
+line-height: 10px;
+padding: 10px;
+transform:translateX(-85%) translateY(20%);
+
+}
+.ngo_quote_bg{
+
+  /* God just has a way of working things out the way he wants to and you have no say in that. */
+  width: 175px;
+  height: 70px;
+  transform:translateX(-85%) translateY(15%) ;
+  
+}
+.button-text{
+  font-size: 4px;
+ }
+ button.learn-more {
+  width: 4rem;
+ }
+  
+ button.learn-more .circle {
+
+
+  width: 1rem;
+  height: 1rem;
+  
+  border-radius: 1.625rem;
+ }
+ button.learn-more .circle .icon.arrow {
+  left: 0.3rem;
+  width: 1.4rem;
+  height: 0.4rem;
+ }
+ button.learn-more .circle .icon.arrow::before {
+  right: 0.03rem;
+  width: 0.3rem;
+  height: 0.3rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+ }
+ .icon.arrow{
+  transform: translateX(-75%) translateY(80%);
+ }
+ button.learn-more .button-text {
+  transform: translate(0%, -30%); /* Center the text */
+  margin-left: 0.3rem;
+
+}
+ 
+}
+@media (min-width: 577px) and (max-width: 991px) {
+  .grid-container4 {
+    display: grid;
+    grid-template-columns:200px 30px 250px auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 10px;
+    grid-template-rows: 100px 230px 35px 90px;
+  }
+  .ngo_main_title{
+    /*She is the activism*/
+    font-size: 32px;
+    line-height: 50px;
+  
+  }
+  .ngo_cnt{
+    /* I feel strongly that all children */
+
+width: 200px;
+height: 250px;
+padding: 10px;
+font-size: 12px;
+line-height: 15px;
+transform: translateY(20%);
+  }
+
+.ngo_img{
+    /* rihanna-british-vogue-3-ht-rc-230215_1676486622213_hpEmbed_22x15_992 2 */
+width:620px;
+height: auto;
+border-radius: 30px 0px 0px 30px;
+transform: translateX(-15%);
+}
+.ngo_cnt_bg{
+    /* Rectangle 19 */
+width: 200px;
+height: 300px;
+transform: translateY(10%);
+
+}
+.ngo_mask_r{
+  /* R */
+
+width: 313px;
+height: 143px;
+font-size: 600px;
+transform: translateX(-40%) translateY(-180%);
+
+}
+.ngo_bg_r{
+  /* R */
+  width: 313px;
+  height: 143px;
+  font-size: 600px;
+transform:translateX(-10%) translateY(-250%);
+
+}
+.ngo_quote{
+
+/* God just has a way of working things out the way he wants to and you have no say in that. */
+width: 190px;
+height: 31px;
+font-size: 12px;
+line-height: 16px;
+padding: 15px;
+
+}
+.ngo_quote_bg{ 
+  /* God just has a way of working things out the way he wants to and you have no say in that. */
+  width: 250px;
+  height: 90px;
+}
+.button-text{
+  font-size: 8px;
+ }
+ button.learn-more {
+  width: 8rem;
+ }
+  
+ button.learn-more .circle {
+
+
+  width: 1rem;
+  height: 1rem;
+  
+  border-radius: 1.625rem;
+ }
+ button.learn-more .circle .icon.arrow {
+  left: 0.3rem;
+  width: 1.4rem;
+  height: 0.4rem;
+ }
+ button.learn-more .circle .icon.arrow::before {
+  right: 0.03rem;
+  width: 0.3rem;
+  height: 0.3rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+ }
+ .icon.arrow{
+  transform: translateX(-75%) translateY(80%);
+ }
+ button.learn-more .button-text {
+  transform: translate(-8%, -50%); /* Center the text */
+  margin-left: 0.2rem;
+
+}
+ 
+}
+/*footer*/
+footer {
+    text-align: center;
+    background-color: #000000; /* Change to your desired background color */
+    padding: 20px 0; /* Adjust padding as needed */
+    max-width: 1320px; /* Set the width */
+  margin: 0 auto; /* Center the footer horizontally */
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--title-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: white;
+    line-height:5px; 
+
+
+  }
+  
+  .footer-content p,
+.footer-content a {
+  display: inline; /* Set both paragraph and anchor tag to display inline */
+  color: white; /* Ensure text color matches */
+}
+
+.icon.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px; /* Add margin-top for spacing */
+}
+
+.icon.footer i {
+  margin: 5px; /* Adjust spacing between icons */
+}
+
+/* Responsive Styles */
+@media (min-width: 577px) and (max-width: 991px)  {
+  .footer-content {
+    flex-direction: column;
+  }
+}
+/*menu.css*/
+  .grid-container2 {
+    display: grid;
+    grid-template-columns: 100px 1fr 400px auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 10px;
+    grid-template-rows: 90px 150px auto;
+  }
+  
+  .rihana_green {
+    /* Rihanna-green */
+  
+    grid-column: 2/3;
+    border-radius: 30px 0px 30px 30px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: auto;
+    height: 600px;
+    z-index: 1;
+  }
+  .rihana_green_bg {
+    grid-column: 2/3;
+    grid-row: 2 / span 2;
+    height: 500px;
+    width: 200px;
+    background-color: var(--white_bg);
+    border-radius: 30px;
+    z-index: 0;
+  }
+  .ceo_content {
+    /* Rihanna, CEO of Fenty Beauty and Fenty, */
+    grid-column: 2/3;
+    grid-row: 4;
+    color: var(--white_bg);
+    text-align: right;
+    width: 260px;
+    font-family: var(--main_content_font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    justify-self: end;
+    z-index: 3;
+  }
+  
+  .mask_R {
+    grid-column: 1;
+    grid-row: 1;
+    width: 613px;
+    height: 286px;
+    z-index: 2;
+    font-family:var(--third-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1200px;
+    line-height: 1782px;
+    transform: translateY(-120.4%) translateX(-10%);
+    color: rgba(249, 0, 0, 0.57);
+  }
+  
+  .menu_quote {
+    /* Keep your eyes on the finish line and not on the turmoil around you */
+  
+    grid-column: 1;
+    grid-row: 4;
+    width: 309px;
+    height: 63px;
+    font-family: var(--title-font);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color:var(--main-font);
+    z-index: 2;
+    transform: translateY(400.4%);
+  }
+  
+  .rihana_ceo {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 436px;
+    height: 247px;
+    display: block; /* Make the image a block-level element */
+    transition: transform 0.3s; /* Add a transition for smooth hover effect */
+  }
+  
+  .rihana_ceo_bg {
+    /*ceo background*/
+    grid-column: 3/4;
+    grid-row: 1/2;
+    width: 400px;
+    height: 153px;
+    background: var(--secondary_bg);
+    border-radius: 30px;
+    transform: translateY(62.4%);
+  }
+  .rihana_ceo_txt {
+    /* She is the CEO */
+    grid-column: 4/5;
+    grid-row: 2;
+    font-family:var(--title-font);
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(16px, 3vw, 48px);
+    line-height: 50px;
+    /* or 104% */
+    color:var(--main-font);
+  }
+  
+  .rihana_artist {
+    grid-column: 4;
+    grid-row: 3;
+    border-radius: 30px 0px 30px 30px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 290px;
+    height: auto;
+    border-radius: 30px 0px 30px 0px;
+    transform: translateX(-1%);
+    display: block; /* Make the image a block-level element */
+    transition: transform 0.3s; /* Add a transition for smooth hover effect */
+  }
+  
+  .rihana_artist_bg {
+    /*artist background*/
+    grid-column: 4;
+    grid-row: 3;
+    width: 225px;
+    height: 250px;
+    background: var(--secondary_bg);
+    border-radius: 30px 0px 0px 30px;
+    transform: translateY(28.4%) translateX(10.4%);
+  }
+  .rihana_artist_txt {
+    font-family: var(--title-font);
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(16px, 3vw, 48px);
+    line-height: 50px;
+    color: var(--main-font);
+    text-align: right;
+  }
+  .rihana_artist_content {
+    font-family: var(--main_content_font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(3.5px, 3vw, 16px);
+    line-height: 21px;
+    text-align: right;
+    color: var(--main-font);
+  }
+  
+  .artist_content {
+    grid-column: 3/4;
+    grid-row: 3;
+    width: 350px;
+    justify-self: end;
+    transform: translateY(22.4%);
+  }
+  
+  .rihana_ngo {
+    /* ngo */
+    justify-self: end;
+    grid-column: 3;
+    grid-row: 4;
+    height: auto;
+    width: 250px;
+    display: block; /* Make the image a block-level element */
+    transition: transform 0.3s; /* Add a transition for smooth hover effect */
+  }
+  
+  .rihana_ngo_bg {
+    /*artist background*/
+    z-index: -1;
+    justify-self: end;
+    grid-column: 3;
+    grid-row: 4;
+    width: 300px;
+    height: 275px;
+    background: var(--secondary_bg);
+    border-radius: 30px;
+    transform: translateY(28.4%);
+  }
+  
+  .rihana_ngo_txt {
+    font-family:var(--title-font);
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(16px, 3vw, 48px);
+    line-height: 50px;
+    color:var(--main-font);
+  }
+  
+  .rihana_ngo_content {
+    font-family: var(--main_content_font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(3.5px, 3vw, 16px);
+    line-height: 21px;
+    color:var(--main-font);
+    width: 240px;
+    justify-self: end;
+  }
+  
+  .ngo_content {
+    grid-column: 4;
+    grid-row: 4;
+    justify-self: end;
+    transform: translateY(32.4%) translateX(-19.4%);
+  }
+  
+  a {
+    display: block; /* Make the link a block-level element */
+    text-decoration: none; /* Remove underlines from the link */
+  }
+  
+  a:hover {
+    transform: scale(1.1); /* Scale the image to 110% when hovering */
+  }
+  
+  @media (max-width: 576px) {
+    .grid-container2 {
+      display: grid;
+      grid-template-columns: 25px 160px 90px auto;
+      grid-column-gap: 3px;
+      grid-row-gap: 2px;
+      grid-template-rows: 30px 30px 120px;
+    }
+    .rihana_green {
+      /* Rihanna-green */
+      width: auto;
+      height: 200px;
+    }
+    .rihana_green_bg {
+      height: 90px;
+      width: 20px;
+    }
+    .ceo_content {
+      /* Rihanna, CEO of Fenty Beauty and Fenty, */
+      width: 120px;
+      height: 150px;
+      line-height: 10px;
+      overflow: hidden; /* Hides any overflow */
+      text-overflow: ellipsis;
+      font-size: 6px;
+    }
+  
+    .mask_R {
+      font-size: 400px;
+      transform: translateY(-250.4%) translateX(-10%);
+      color: rgba(249, 0, 0, 0.57);
+    }
+  
+    .menu_quote {
+      /* Keep your eyes on the finish line and not on the turmoil around you */
+  
+      line-height: 15px;
+      width: 90px;
+      height: 20px;
+      font-size: 8px;
+    }
+  
+    .rihana_ceo_txt {
+      line-height: 15px;
+    }
+    .rihana_ceo {
+      transform: translateX(-8%);
+      width: auto;
+      height: 60px;
+      display: block; /* Make the image a block-level element */
+      transition: transform 0.3s; /* Add a transition for smooth hover effect */
+    }
+  
+    .rihana_ceo_bg {
+      /*ceo background*/
+  
+      width: 80px;
+      height: 37px;
+      border-radius: 5px;
+    }
+  
+    .rihana_artist {
+      width: 100px;
+      height: auto;
+      transform: translateY(4%) ;
+    }
+  
+    .rihana_artist_bg {
+      /*artist background*/
+  
+      width: 75px;
+      height: 80px;
+      border-radius: 5px 0px 0px 5px;
+      transform: translateY(50%) translateX(10.4%);
+    }
+  
+    .rihana_artist_txt {
+      font-size: 16px;
+      line-height: 15px;
+    }
+    .rihana_artist_content {
+      line-height: 10px;
+      overflow: hidden; /* Hides any overflow */
+      text-overflow: ellipsis;
+      font-size: 6px;
+    }
+  
+    .artist_content {
+      width: 85px;
+      height: 100px;
+      line-height: 10px;
+      overflow: hidden; /* Hides any overflow */
+      text-overflow: ellipsis;
+      font-size: 6px;
+    }
+  
+    .rihana_ngo {
+      /* ngo */
+  
+      transform: translateY(14%) translateX(-6%);
+      width: 70px;
+      height: auto;
+    }
+  
+    .rihana_ngo_bg {
+      /*artist background*/
+  
+      width: 100px;
+      height: 75px;
+      border-radius: 5px;
+      transform: translateY(78%);
+    }
+  
+    .rihana_ngo_content {
+      width: 80px;
+      font-size: 6px;
+      line-height: 10px;
+    }
+    .rihana_ngo_txt {
+      line-height: 15px;
+    }
+  
+    .ngo_content {
+      transform: translateY(30%) translateX(-19.4%);
+    }
+  }
+  
+  @media (min-width: 577px) and (max-width: 991px) {
+    .grid-container2 {
+      display: grid;
+      grid-template-columns: 50px 250px 204px auto;
+      grid-column-gap: 15px;
+      grid-row-gap: 5px;
+      grid-template-rows: 80px 75px 150px auto;
+    }
+    .rihana_green {
+      /* Rihanna-green */
+      width: auto;
+      height: 315px;
+      border-radius: 15px;
+    }
+    .rihana_green_bg {
+      transform: translateY(-20.4%);
+      height: 250px;
+      width: 100px;
+      border-radius: 15px;
+    }
+    .ceo_content {
+      /* Rihanna, CEO of Fenty Beauty and Fenty, */
+      width: 160px;
+      font-size: 8px;
+      line-height: 10px;
+    }
+  
+    .mask_R {
+      width: 613px;
+      height: 286px;
+      font-size: 600px;
+      line-height: 0px;
+      transform: translateY(90.4%) translateX(-5%);
+    }
+  
+    .menu_quote {
+      /* Keep your eyes on the finish line and not on the turmoil around you */
+  
+      width: 150px;
+      height: 23px;
+      font-size: 12px;
+      line-height: 16px;
+      transform: translateY(400.4%);
+    }
+  
+    .rihana_ceo {
+      width: auto;
+      height: 130px;
+      transform: translateY(12%) translateX(-2%);
+    }
+  
+    .rihana_ceo_bg {
+      /*ceo background*/
+      width: 204px;
+      height: 90px;
+      border-radius: 15px;
+      transform: translateY(80%);
+    }
+    .rihana_ceo_txt {
+      font-size: 24px;
+      line-height: 25px;
+    }
+  
+    .rihana_artist {
+      width: 140px;
+      height: auto;
+      transform: translateX(0.4%) translateY(-4.5%);
+    }
+  
+    .rihana_artist_bg {
+      /*artist background*/
+  
+      width: 112px;
+      height: 125px;
+      border-radius: 15px 0px 0px 15px;
+      transform: translateY(13.4%) translateX(10.4%);
+    }
+    .rihana_artist_txt {
+      font-size: 24px;
+      line-height: 30px;
+    }
+    .rihana_artist_content {
+      font-size: 8px;
+      line-height: 11px;
+    }
+  
+    .artist_content {
+      transform: translateY(12%);
+      width: 200px;
+      justify-self: end;
+    }
+  
+    .rihana_ngo {
+      /* ngo */
+  
+      transform: translateX(-3%) translateY(0%);
+      width: 125px;
+      height: auto;
+    }
+  
+    .rihana_ngo_bg {
+      /*artist background*/
+  
+      width: 150px;
+      height: 110px;
+      border-radius: 15px;
+      transform: translateY(60%) translateX(0%);
+    }
+    .rihana_ngo_txt {
+      font-size: 24px;
+      line-height: 25px;
+    }
+    .rihana_ngo_content {
+      font-size: 8px;
+      line-height: 11px;
+      width: 120px;
+    }
+    .ngo_content {
+      transform: translateY(32.4%) translateX(-65.4%);
+    }
+  }
+  /*artist.css*/
+ 
+  .grid-container5 {
+    display: grid;
+    grid-template-columns: 100px 520px 150px 150px 150px 150px 20px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-rows: 50px 300px auto;
+  }
+  
+  .artist_img{
+
+grid-column: 2;
+grid-row: 1 / span 4;
+width:970px;
+height: auto;
+transform: translateX(-40%) translateY(5%);
+z-index: -1;
+  }
+
+.album1,.album2,.album3,.album4,.album5,.album6,.album7,.album8{
+    border-radius: 10px;
+    height: 230px;
+    z-index: 1;
+}
+.album1{
+    grid-column: 3;
+grid-row: 3;
+}
+.album2{
+    grid-column: 4;
+grid-row: 3;
+}
+.album3{
+    grid-column: 5;
+grid-row: 3;
+}
+.album4{
+    grid-column: 6;
+grid-row: 3;
+}
+.album5{
+    grid-column:3;
+grid-row: 4;
+}
+.album6{
+    grid-column: 4;
+grid-row: 4;
+}
+.album7{
+    grid-column: 5;
+grid-row: 4;
+}
+.album8{
+    grid-column: 6;
+grid-row: 4;
+}
+
+
+
+
+.album_title{
+
+    /* Unapologetic */
+font-family: var(--title-font);
+font-style: italic;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+color:var(--secondary-text);
+
+
+}
+.album_date{
+   /* released on 19 November 2012 */
+
+font-family: var(--main_content_font);
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 17px;
+color: var(--main-font);
+
+
+}
+.album_bg{
+    /* Rectangle 23 */
+grid-column: 2;
+grid-row: 1;
+width: 818px;
+height: 900px;
+background: rgba(0, 0, 0, 0.6);
+border-radius: 10px;
+transform: translateY(3%) translateX(60%);
+z-index: 0;
+}
+.playlist{
+grid-column: 3;
+grid-row: 1;
+z-index: 1;
+}
+.playlist{
+    /* Diamonds */
+
+grid-column: 3;
+grid-row: 2;
+
+}
+.diamonds{
+    width: 503px;
+height: 51.92px;
+font-family: var(--title-font);
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+color: var(--main-font);
+}
+
+.description{
+    /* Electronic music, Contemporary R&B, R&B/Soul, Pop, Hip-Hop/Rap • Unapologetic • 2012 */
+
+width: 550px;
+height: 12.98px;
+font-family: 'Thasadith';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 16px;
+color: var(--main-font);
+}
+.success{
+    /* "Diamonds" was certified seven-times platinum by the Recording Industry Association of America (RIAA) and sold over 3.5 million digital copies in the country. It also peaked at number one on the UK Singles Chart and became Rihanna's seventh number one song in the country; it was certified three-times platinum by the British Phonographic Industry (BPI). By May 2013, it had sold over 7.5 million copies worldwide. */
+
+width: 650px;
+height: 58.42px;
+font-family: var(--main_content_font);
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+color: var(--main-font);
+}
+.artist_mask{
+    /* R */
+
+grid-column: 1;
+grid-row: 3;
+width: 613px;
+height: 286px;
+font-family: var(--third-font);
+font-style: normal;
+font-weight: 400;
+font-size: 700px;
+line-height: 960px;
+color: var(--main-font);
+transform: translateY(-60%) translateX(-10%);
+z-index: 2;
+}
+.artist_name{
+    /* ihana */
+
+grid-column:2;
+grid-row: 4;
+width: 664px;
+height: 273px;
+font-family: var(--third-font);
+font-style: normal;
+font-weight: 400;
+font-size: 200px;
+line-height: 274px;
+color: var(--secondary-text);
+z-index: 3;
+transform: translateY(19%);
+}
+
+.button {
+    width: 120px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3px;
+    padding: 0px 15px;
+    background-color:var(--secondary-text);
+    border-radius: 10px;
+    border: none;
+    color:var(--main-font);
+    position: relative;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 9px;
+    transition-duration: .2s;
+  }
+  
+  .game path {
+    color: var(--main-font);
+  }
+  
+  .button .arrow {
+    position: absolute;
+    right: 0;
+    padding: 0px 5px;
+    width: 30px;
+    height: 100%;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button:hover,
+  .button:focus {
+    background-color: black;
+    transition-duration: .2s;
+  }
+  
+  .button:hover .arrow {
+    animation: slide-right .6s ease-out both;
+  }
+  /* arrow animation */
+  @keyframes slide-right {
+    0% {
+      transform: translateX(-10px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .button:active {
+    transform: translate(1px , 1px);
+    transition-duration: .2s;
+  }
+  .album_name{
+    /* Her Discography */
+grid-column:3;
+grid-row: 2;
+width: 503px;
+height: 62px;
+font-family: var(--main_content_font);
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 62px;
+color: var(--main-font);
+z-index: 2;
+transform: translateY(380%);
+
+  }
+  .artist_bg{
+    /* R */
+grid-column:4;
+ grid-row: 1;
+width: 613px;
+height: 286px;
+z-index: -3;
+font-family:var(--third-font);
+font-style: normal;
+font-weight: 400;
+font-size: 900px;
+color: rgba(255, 0, 0, 0.69);
+transform: translateY(-70%) translateX(-20%);
+
+
+  }
+
+  @media (min-width: 577px) and (max-width: 991px){
+
+    .grid-container5 {
+      display: grid;
+      grid-template-columns: 50px 260px 75px 75px 75px 75px 10px;
+      grid-column-gap: 20px;
+      grid-row-gap: 10px;
+      grid-template-rows: 10px 185px 120px;
+    }
+    
+    .artist_img{
+
+  width:485px;
+  height: auto;
+  transform: translateX(-40%) translateY(5%);
+    }
+  
+  .album1,.album2,.album3,.album4,.album5,.album6,.album7,.album8{
+      border-radius: 10px;
+      height: 120px;
+      max-width:4.7rem;
+      
+     
+  }
+
+  .al2{
+    height: 73px;
+  }
+  
+
+  .album_title{
+  
+      /* Unapologetic */  
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 0px;
+  
+  }
+  .album_date{
+     /* released on 19 November 2012 */
+
+  font-size: 6.5px;
+  line-height:8px;
+ 
+  
+  
+  }
+  .album_bg{
+      /* Rectangle 23 */
+  width: 420px;
+  height: 460px;
+  border-radius: 5px;
+  transform: translateY(3%) translateX(60%);
+  }
+ 
+ 
+  .diamonds{
+      width: 201px;
+  height: 25px;
+  font-size: 24px; 
+  }
+  
+  .description{
+      /* Electronic music, Contemporary R&B, R&B/Soul, Pop, Hip-Hop/Rap • Unapologetic • 2012 */
+  
+  width: 275px;
+  height: 6.49px;
+  font-size: 5px;
+  line-height: 0px;
+  }
+  .success{
+      /* "Diamonds" was certified seven-times platinum by the Recording Industry Association of America (RIAA) and sold over 3.5 million digital copies in the country. It also peaked at number one on the UK Singles Chart and became Rihanna's seventh number one song in the country; it was certified three-times platinum by the British Phonographic Industry (BPI). By May 2013, it had sold over 7.5 million copies worldwide. */
+  
+  width: 325px;
+  height: 29px;
+  font-size: 7px;
+  line-height: 10px;
+  }
+  .artist_mask{
+      /* R */
+  
+
+  width: 301px;
+  height: 143px;
+  font-size: 350px;
+  line-height: 430px;
+  transform: translateY(-65%) translateX(-10%);
+
+  }
+  .artist_name{
+      /* ihana */
+  
+
+  width: 332px;
+  height: 136px;
+  font-size: 100px;
+  line-height: 137px;
+  transform: translateY(9%);
+  }
+  
+  .button {
+      width:90px;
+      height: 20px;
+      gap: 2px;
+      padding: 0px 7px;
+      font-size: 9px;
+      transition-duration: .2s;
+    }
+    
+    
+    
+    .button .arrow {
+
+      right: 0;
+      padding: 0px 5px;
+      width: 30px;
+      height: 100%;
+      font-size: 18px;
+  
+    }
+    
+    
+    /* arrow animation */
+    
+    .album_name{
+      /* Her Discography */
+
+  width: 201px;
+  height: 31px;
+  font-size: 24px;
+  line-height: 31px;
+  transform: translateY(500%);
+  
+    }
+    .artist_bg{
+      /* R */
+
+  width: 313px;
+  height: 143px;
+  font-size: 4500px;
+  transform: translateY(-70%) translateX(-20%);
+  
+  
+    }
+  }
+
+  @media (max-width: 576px){
+    .grid-container5 {
+      display: grid;
+      grid-template-columns: 30px 140px 50px 50px 50px 50px 6px;
+      grid-column-gap: 10px;
+      grid-row-gap: 10px;
+      grid-template-rows: 16px 130px 50px auto;
+    }
+    
+    .artist_img{
+  
+  width:320px;
+  transform: translateX(-40%) translateY(5%);
+
+    }
+  
+  .album1,.album2,.album3,.album4,.album5,.album6,.album7,.album8{
+      border-radius: 3px;
+      max-height: 10px;
+      max-width: 2rem;
+  }
+ 
+  .al2{
+    height: 30px;
+  }
+  
+  .album_bg{
+      /* Rectangle 23 */
+  width: 272px;
+  height: 300px;
+  border-radius: 5px;
+  transform: translateY(3%) translateX(50%);
+  }
+ 
+  .diamonds{
+      width: 131px;
+  height: 17px;
+  font-size: 16px;
+  }
+  
+  .description{
+      /* Electronic music, Contemporary R&B, R&B/Soul, Pop, Hip-Hop/Rap • Unapologetic • 2012 */
+  
+  width: 183px;
+  height: 4px;
+  font-size: 3px;
+  line-height: 0px;
+  }
+  .success{
+      /* "Diamonds" was certified seven-times platinum by the Recording Industry Association of America (RIAA) and sold over 3.5 million digital copies in the country. It also peaked at number one on the UK Singles Chart and became Rihanna's seventh number one song in the country; it was certified three-times platinum by the British Phonographic Industry (BPI). By May 2013, it had sold over 7.5 million copies worldwide. */
+  
+  width: 213px;
+  height:16px;
+  font-size: 5px;
+  line-height: 6px;
+  }
+  .artist_mask{
+      /* R */
+  
+
+  width: 204px;
+  height: 96px;
+  font-size: 230px;
+  line-height: 320px;
+  transform: translateY(-107%) translateX(-10%);
+  }
+  .artist_name{
+      /* ihana */
+
+  width: 221px;
+  height: 91px;
+  font-size: 63px;
+  line-height: 91px;
+  transform: translateY(12%);
+  }
+  
+  .button {
+      width: 65px;
+      height: 15px;
+      padding: 0px 5px;
+      border-radius: 10px;
+      font-size: 6px;
+      transform: translateY(-100%);
+     
+    }
+ 
+    .button .arrow {
+     
+      padding: 0px 10px;
+      width: 10px;
+      height: 100%;
+      font-size: 18px;
+     transform: translateY(-11%);
+    }
+    
+    
+    .album_name{
+      /* Her Discography */
+
+  width: 161px;
+  height: 22px;
+  font-size: 16px;
+  line-height: 20px;
+  transform: translateY(500%);
+  
+    }
+    .artist_bg{
+      /* R */
+  width: 201px;
+  height: 95px;
+  font-size: 300px;
+  transform: translateY(-70%) translateX(-30%);
+  
+  
+    }
+  
+  }
+
+  </style>
+  <script async src='https://www.googletagmanager.com/gtag/js?id=AW-619184026'></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)};
+  gtag('js', new Date());
+
+  
+    gtag('set', {"allow_enhanced_conversions":true});
+  
+
+  
+    
+    gtag('config', 'AW-619184026', {});
+  
+    
+    gtag('config', 'AW-11286588830', {});
+  
+
+  
+    gtag('event', 'conversion', {"send_to":"AW-619184026/V36WCM6RytUBEJr_n6cC"});
+  
+    gtag('event', 'conversion', {"send_to":"AW-619184026","email":"bernarsanne@gmail.com","fullname":"Anne-gaelle Bernard"});
+  
+    gtag('event', 'conversion', {"send_to":"AW-11286588830","email":"bernarsanne@gmail.com","fullname":"Anne-gaelle Bernard"});
+  
+</script>
+<script type="text/javascript">
+  if(typeof ga === 'undefined') {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-106219449-1', {});
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    ga('send', 'pageview', window.location.pathname + window.location.search);
+  
+</script>
+</head>
+  <body>
+    <div class="container">
+      <!-- nav bar -->
+     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#home" style="color: white">Rihana</a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="material-symbols-outlined"> menu </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ms-auto mb-2 me-0 mb-lg-0">
+
+              <li class="nav-item me-3">
+                <a class="nav-link" href="#home" style="color: white">Home</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link" href="#explore" style="color: white">Explore</a>
+          </li>
+                <li class="nav-item me-3">
+                    <a class="nav-link" href="#artist" style="color: white">The Artist</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a class="nav-link" href="#ceo" style="color: white">The CEO</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a class="nav-link" href="#ngo" style="color: white">The Activism</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<br><br><br><br>
+<br><br>
+
+      <!-- Home  -->
+
+      <div id ="home" class="grid-container">
+        <div class="quote1">“</div>
+
+        <div class="quote">
+          Ask God for forgiveness, and leave your regrets in the past
+        </div>
+        <div class="content1">
+          Robyn Rihanna Fenty is a Barbadian singer, businesswoman, actress, and
+          songwriter. Widely regarded as one of the most prominent recording
+          artists of the 21st century
+        </div>
+        <div class="content2">
+
+          <a href="https://en.wikipedia.org/wiki/Rihanna" target="_blank">
+          <button class="learn-more">
+          <span class="circle" aria-hidden="true">
+          <span class="icon arrow"></span>
+          </span>
+          <span class="button-text">Learn More</span>
+        </button>
+      
+    </a>
+      </div>
+        <div class="total_sale">250M+</div>
+        <div class="record">records sold worldwide</div>
+        <div class="total_sale tenM">10M+</div>
+        <div class="record albums">albums sold in US</div>
+
+        <div class="bg_R">R</div>
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/157/original/home.png?1713125396" class="home_img" alt="Image of Rihana" />
+        <div class="highlight_rect"></div>
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/166/original/sign.png?1713125466" class="sign" alt="sign of Rihana" />
+        <div class="mask_text">ihana</div>
+
+        <!--black area-->
+        <div class="home_footer"></div>
+        <!--icons-->
+        <div class="icon" >
+          <a href="https://instagram.com/badgalriri" class="icon" style="display:inline">  <i class="bi bi-instagram"></i> </a>
+          <a href="https://www.facebook.com/rihanna" class="icon" style="display:inline"><i class="bi bi-facebook"></i></a>
+            <a href="https://twitter.com/rihanna" class="icon" style="display:inline"><i class="bi bi-twitter-x"></i></a>
+              <a href="https://www.youtube.com/rihanna" class="icon" style="display:inline"><i class="bi bi-youtube"></i></a>
+        </div>
+
+        <!--achievements-->
+
+        <div class="total_grammy">9</div>
+        <div class="total_us_music">13</div>
+        <div class="total_billboard">12</div>
+
+        <div class="grammy">records sold worldwide</div>
+        <div class="us_music">albums sold in US</div>
+        <div class="billboard">albums sold in US</div>
+      </div>
+
+      <!--menu-->
+      <!--Rihana with green -->
+      <div id="explore" class="grid-container2">
+        <div class="rihana_green_bg"></div>
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/161/original/rihana_green.png?1713125433" class="rihana_green" />
+        <div class="ceo_content">
+          Rihanna, CEO of Fenty Beauty and Fenty, pioneers inclusivity in
+          cosmetics and fashion, challenging norms and inspiring diversity.
+          Transitioning to executive chair in 2023, she continues to shape brand
+          vision while focusing on creative leadership in music and beauty.
+        </div>
+
+        <!--mask R-->
+        <div class="mask_R">R</div>
+
+        <!--Quote from Menu-->
+        <div class="menu_quote">
+          “Keep your eyes on the finish line and not on the turmoil around you
+        </div>
+        
+        <!--She is CEO-->
+        <div class="rihana_ceo_bg"></div>
+        <a href="#ceo" class="rihana_ceo">
+          <img src="
+          https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/153/original/fenty.png?1713125368" class="rihana_ceo" />
+        </a>
+        <!--She is the ceo content-->
+        <div class="rihana_ceo_txt">
+          She is the
+          <div style="color: rgba(249, 0, 0, 0.82)">CEO</div>
+        </div>
+ 
+        <!--She is the artist-->
+        <div class="rihana_artist_bg"></div>
+        <a href="#artist" class="rihana_artist">
+          <img src="
+          https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/160/original/rihana_artist.png?1713125424" class="rihana_artist" />
+        </a>
+
+        <!--She is the artist content-->
+        <div class="artist_content">
+          <div class="rihana_artist_txt">
+            She is the
+            <p style="color: rgba(249, 0, 0, 0.82); display: inline">Artist</p>
+          </div>
+
+          <p class="rihana_artist_content">
+            Rihanna is a multifaceted talent, acclaimed as both a chart-topping
+            singer and prolific songwriter, with her versatile performances
+            captivating audiences worldwide. Beyond her musical prowess, she has
+            also showcased her acting skills in various films and television
+            productions, demonstrating her versatility across multiple
+            entertainment mediums.
+          </p>
+        </div>
+
+        <!--she is the activism-->
+        <div class="rihana_ngo_bg"></div>
+        <a href="#ngo" class="rihana_ngo">
+          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/159/original/ngo.png?1713125416" alt="NGO Image" class="rihana_ngo" />
+        </a>
+        
+        <!--she is the activism content-->
+        <div class="ngo_content">
+          <div class="rihana_ngo_txt">
+            She is the
+            <div style="color: rgba(249, 0, 0, 0.82)">Activism</div>
+          </div>
+
+          <p class="rihana_ngo_content">
+            Rihanna supports global education, health, and emergency response
+            programs in honor of her grandparents, aiming for positive community
+            impact worldwide.
+          </p>
+        </div>
+      </div>
+      <br>
+      <hr>
+
+<!--artist page-->
+<div id="artist">
+<div class="grid-container5">
+   
+  <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/152/original/artist.png?1713125354" class="artist_img">
+  <!--albums cards-->
+
+  <div class="card album1" style="width:9rem;">
+    <a href="https://g.co/kgs/aZ8RsZV" target="_blank"> <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/167/original/Unapologetic_-_Rihanna.png?1713125472" class="card-img-top al" alt="Unapologetic" > </a>
+    <div class="card-body d-none d-sm-block">
+      <h5 class="card-title album_title">Unapologetic</h5>
+      <p class="card-text album_date">19 November 2012 </p>
+    </div>
+  </div>
+
+  <div class="card album2" style="width: 9rem;">
+    <a href="https://g.co/kgs/Gy2Nvd9" target="_blank"> <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/162/original/Rihanna_-_Anti.png?1713125440" class="card-img-top al" alt="anti" > </a>
+    <div class="card-body d-none d-sm-block">
+      <h5 class="card-title album_title">Anti</h5>
+      <p class="card-text album_date">January 28, 2016</p>
+    </div>
+  </div>
+
+   <div class="card album3" style="width:9rem;">
+    <a href="https://g.co/kgs/JhaC2pT" target="_blank"> <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/163/original/Rihanna_-_Loud.png?1713125446" class="card-img-top al" alt="Loud" > </a>
+    <div class="card-body d-none d-sm-block">
+      <h5 class="card-title album_title">Loud</h5>
+      <p class="card-text album_date ">November 12, 2010</p>
+    </div>
+  </div>
+
+  <div class="card album4" style="width:9rem;">
+    <a href="https://g.co/kgs/wziJVWn" target="_blank"> <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/165/original/Rihanna_-_Talk_That_Talk_%28standard%29.png?1713125459" class="card-img-top al" alt="Rihanna_-_Talk_That_Talk_" > </a>
+    <div class="card-body d-none d-sm-block">
+      <h5 class="card-title album_title">Talk That Talk</h5>
+      <p class="card-text album_date">November 18, 2011 </p>
+    </div>
+  </div>
+
+  <div class="card album5" style="width: 9rem;">
+    <a href="https://g.co/kgs/EsUsGqn" target="_blank"> <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/156/original/Good_Girl_Gone_Bad.png?1713125387" class="card-img-top al" alt="Good Girl Gone Bad" > </a>
+    <div class="card-body d-none d-sm-block">
+      <h5 class="card-title album_title">Good Girl Gone Bad</h5>
+      <p class="card-text album_date">May 31, 2007</p>
+    </div>
+  </div>
+
+  
+  <div class="card album6" style="width:9rem; display: inline-block;">
+    <a href="https://g.co/kgs/aDpnk5x" target="_blank"> <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/158/original/licensed-image.jpeg?1713125405" height="146px" class="card-img-top al2" alt="Rated R" > </a>
+    <div class="card-body d-none d-sm-block">
+      <h5 class="card-title album_title">Rated R</h5>
+      <p class="card-text album_date">November 20, 2009</p>
+    </div>
+  </div> 
+
+   <div class="card album7" style="width:9rem;">
+    <a href="https://g.co/kgs/s3SEkuU" target="_blank"> <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/151/original/A_Girl_like_Me_-_Rihanna.png?1713125339" class="card-img-top al" alt="A Girl like Me" > </a>
+    <div class="card-body d-none d-sm-block">
+      <h5 class="card-title album_title">A Girl like Me</h5>
+      <p class="card-text album_date ">April 10, 2006</p>
+    </div>
+  </div>
+
+
+  <div class="card album8" style="width: 9rem;">
+    <a href="https://g.co/kgs/PH4VGfB" target="_blank"> <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/164/original/Rihanna_-_Music_of_the_Sun.png?1713125453" class="card-img-top al" alt="Music of the Sun" > </a>
+    <div class="card-body d-none d-sm-block">
+      <h5 class="card-title album_title">Music of the Sun</h5>
+      <p class="card-text album_date"> August 29, 2005</p>
+    </div>
+  </div>
+
+  <div class="album_bg"> </div>
+  <div class="artist_mask"> R </div>
+  <div class="artist_bg"> R </div>
+    <div class="artist_name"> ihana </div>
+  <div class="playlist"> 
+    <h3 class="diamonds" > Diamonds </h3>
+  <br>
+    <h5 class="description"> Electronic music, Contemporary R&B, R&B/Soul, Pop, Hip-Hop/Rap  • Unapologetic • 2012</h5>
+    <br>
+    <p class="success">   "Diamonds" was certified seven-times platinum by the Recording Industry Association of America (RIAA) and sold over 3.5 million digital copies in the country. It also peaked at number one on the UK Singles Chart and became Rihanna's seventh number one song in the country; it was certified three-times
+       platinum by the British Phonographic Industry (BPI). By May 2013, it had sold over 7.5 million copies worldwide.</p>
+    <br><br>
+    <a href="https://youtu.be/lWA2pjMjpBs?feature=shared" target="_blank">
+    <button class="button">
+     <i class="bi bi-play-fill"></i>
+        Play Now
+        <div class="arrow">››</div>
+      </button> 
+    </a>
+  </div>
+  <div class="album_name">Her Discography</div>
+</div>
+</div>
+<br>
+<hr>
+
+      <!--She is the CEO Page-->
+      <div id="ceo" class="grid-container3" > 
+        <h1 class="CEO_main_title"> She is the  <div style="color: rgba(249, 0, 0, 0.82); display: inline;">CEO</div> </h1>
+      <!--bg R-->
+      <div class="bg-left">R</div>
+      <div class="bg-right">R</div>
+      <!--savage x fenty card-->
+      <div class="card card-1" style="width: 20rem;">
+        <a href="https://www.savagex.com/" target="_blank">  <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/171/original/savage-ezgif.com-webp-to-jpg-converter.jpg?1713126059" class="card-img-top image" alt="savage x fenty" > </a>
+        <div class="card-body">
+          <h5 class="card-title">Savage X Fenty</h5>
+          <p class="card-text">Rihanna co-owns Savage X Fenty, a lingerie line disrupting norms and celebrating diversity since its spring 2018 inception. Despite stepping down as CEO in 2023, Rihanna remains as executive chair, ensuring her continued guidance in shaping the brand's vision. With the appointment of Hillary Super as CEO, Rihanna's strategic 
+            move allows her to focus on her creative leadership while exploring new opportunities in music, beauty, and beyond.</p>
+        </div>
+      </div>
+
+       <!--fenty beauty card-->
+      <div class="card card-2" style="width: 20rem;">
+        <div class="card-body">
+          <h5 class="card-title">Fenty Beauty</h5>
+          <p class="card-text">Rihanna's entrepreneurial journey spans the fashion and cosmetics industries, with her iconic ventures redefining standards of beauty and empowerment by offering a diverse range of products suitable for all skin tones. From the groundbreaking launch of Fenty Beauty, achieving remarkable revenue of $570 million in 2019, to the historic moment of founding Fenty, 
+            marking her as the first woman and black woman to join LVMH, Rihanna continues to challenge norms and inspire inclusivity.</p>
+        </div>
+        <a href="https://fentybeauty.com/" target="_blank"> <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/154/original/fentybeauty.jpg?1713125376" class="card-img-top image img2" alt="savage x fenty" > </a>
+      </div>
+
+       <!--fenty skin card-->
+       <div class="card card-3" style="width: 20rem;">
+        <a href="https://fentybeauty.com/pages/fenty-skin?utm_source=google&utm_medium=cpc&utm_campaign=10502938767&utm_adgroup=143710413314&gad_source=1&gclid=CjwKCAjw_e2wBhAEEiwAyFFFo1FHw56uePDWg3PMtDw9VsTz7UELTOOeYc-2BXDCqblBXjigvcLasBoCsN8QAvD_BwE" target="_blank"> <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/155/original/fenty-skin.jpg?1713125382" class="card-img-top image img3" alt="savage x fenty" > </a>
+        <div class="card-body">
+          <h5 class="card-title">Fenty Skin</h5>
+          <p class="card-text">Fenty Skin, Rihanna's highly anticipated skincare brand, revolutionizes  the industry with its inclusive approach, catering to individuals of all  skin tones and types. Emphasizing simplicity and effectiveness, the  debut trio of products offers a streamlined skincare routine while  incorporating potent ingredients like Barbados cherry and hyaluronic  acid. With sleek, refillable packaging and a sensorial experience  infused with tropical fragrances,
+             Fenty Skin elevates self-care to new  heights, embodying Rihanna's commitment to accessible and luxurious  skincare for all.</p>
+        </div>
+      </div>
+
+      <!--quote of ceo-->
+      <div class="quote_ceo">“Don’t lower your standards for anything or anyone.</div>
+      </div>
+
+      <hr>
+
+       <!--Activism page-->
+       <div class="grid-container4" id="ngo">
+        <h1 class="ngo_main_title"> She is the <div style="color: rgba(249, 0, 0, 0.82); display: inline;">Founder</div> of the Clara Lionel Foundation</h1>
+        <img src="
+        https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/168/original/unnamed.jpg?1713125477" class="ngo_img">
+        <div class="ngo_cnt">
+          I feel strongly that all children everywhere should be afforded the  opportunity of a quality education, therefore I'm proud to announce
+            Clara Lionel Foundation's partnership with education advocacy leaders  like the Global Partnership for Education and Global Citizen. 
+            Working  together, I know we can amplify our efforts and ensure that millions of  children gain access to education globally.
+            <br>
+ – Rihanna, discussing the Clara Lionel Foundation's partnership with the Global Partnership for Education <br><br>
+<a href="https://claralionelfoundation.org/" target="_blank" >
+  <button class="learn-more">
+  <span class="circle" aria-hidden="true">
+  <span class="icon arrow"></span>
+  </span>
+  <span class="button-text">Learn More</span>
+</button>
+
+</a>
+        </div>
+        <div class="ngo_cnt_bg"></div>
+        <div class="ngo_mask_r"> R </div>
+        <div class="ngo_bg_r">R</div>
+        <div class="ngo_quote">
+          “God just has a way of working things out the way he wants to and you have no say in that.</div>
+          <div class="ngo_quote_bg"></div>
+   
+      </div>
+      <br> <br> <br>
+      <br> <br> <br>
+      <hr>
+
+
+      
+
+<footer>
+  <div class="footer-content">
+    <p>This project was coded by <a href="/cdn-cgi/l/email-protection#c8a0bbbda5b1a9bca6a7adf8fbf988afa5a9a1a4e6aba7a5" style="color: rgb(83, 83, 255); font-style: italic;">Bernard Anne-gaelle</a> </p>
+    <div class="icon footer">
+      <a href="" class="icon" style="display:inline"><i class="bi bi-instagram"></i></a>
+        <a href="/cdn-cgi/l/email-protection#a2cad1d7cfdbc3d6cccdc7929193e2c5cfc3cbce8cc1cdcf" class="icon" style="display:inline"><i class="bi bi-envelope-at-fill"></i></a>
+          <a href="https://www.linkedin.com/in/bernard-anne-gaelle/" class="icon" style="display:inline"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/anne-gaelle-bernard" class="icon" style="display:inline"><i class="bi bi-github"></i></a>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
